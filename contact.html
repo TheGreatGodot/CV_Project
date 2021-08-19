@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Contact Info</title>
+</head>
+
+<body>
+  <h1>No Way</h1>
+  <p>No free contact information.</p>
+  <br>
+  <hr>
+  <form action="mailto:testemail@plzigno.re" method="post" enctype="text/plain">
+    <label>Your Name:</label>
+    <input type="text" name="yourname" placeholder="******"><br>
+    <label>Your Email:</label>
+    <input type="email" name="youremail"><br>
+    <label>Sign up for mailing list?</label>
+    <input type="checkbox" name="maillist"><br>
+    <label>Your Message:</label><br>
+    <textarea name="message" rows="10" cols="30"></textarea>
+    <input type="submit" value="The Submit Button">
+  </form>
+
+
+
+  <br>
+  <table>
+    <!--Table copied from mdn to remind me to figure out what "scope" is -->
+    <caption>Color names and values</caption>
+    <tbody>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">HEX</th>
+        <th scope="col">HSLa</th>
+        <th scope="col">RGBa</th>
+      </tr>
+      <tr>
+        <th scope="row">Teal</th>
+        <td><code>#51F6F6</code></td>
+        <td><code>hsla(180, 90%, 64%, 1)</code></td>
+        <td><code>rgba(81, 246, 246, 1)</code></td>
+      </tr>
+      <tr>
+        <th scope="row">Goldenrod</th>
+        <td><code>#F6BC57</code></td>
+        <td><code>hsla(38, 90%, 65%, 1)</code></td>
+        <td><code>rgba(246, 188, 87, 1)</code></td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <hr>
+  <br>
+  <!-- Here's another practice table I made to learn <th> and scope -->
+  <table border="1">
+    <caption align="bottom">Caption can use "align" to put at bottom, but use CSS for that instead</caption>
+    <thead>
+      <!-- <th>-tag makes the <thead> is not strictly necessary to formatting as it formats the individual cells as headers -->
+      <tr>
+        <th colspan="3">Using Header as Title</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="col">Column Label 1</th>
+        <th scope="col">Column Label 2</th>
+        <th scope="col">Column Label 3</th>
+      </tr>
+      <tr>
+        <th scope="row">Row Label 1</th>
+        <td>Col 2 Row 1</td>
+        <td>Col 3 Row 1</td>
+      </tr>
+      <tr>
+        <th scope="row">Row Label 2</th>
+        <td>Col 2 Row 2</td>
+        <td>Col 3 Row 2</td>
+      </tr>
+      <tr>
+        <th scope="row">Row Label 3</th>
+        <td>Col 2 Row 3</td>
+        <td>Col 3 Row 3</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td></td>
+        <td>TFoot2</td>
+        <td>TFoot3</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+
+</html>
